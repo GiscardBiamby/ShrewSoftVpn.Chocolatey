@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>ShrewSoftVpn</id>
+    <title>ShrewSoftVpn</title>
+    <version>2.2.0.2</version>
+    <authors>ShrewSoft</authors>
+    <owners>gbiamby</owners>
+    <summary>ShrewSoftVpn</summary>
+    <description>ShrewSoft VPN Client for Windows</description>
+    <projectUrl>http://www.shrew.net/software</projectUrl>
+    <tags>Windows VPN networking</tags>
+    <copyright></copyright>
+    <licenseUrl>http://www.shrew.net/static/help-2.1.x/vpnhelp.htm</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!--<iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/ShrewSoftVpn/ShrewSoftVpn.gif</iconUrl>-->
+    <!--<dependencies>
+      <dependency id="" version="" />
+    </dependencies>-->
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <!--<file src="content\**" target="content" />-->
+  </files>
+</package>
