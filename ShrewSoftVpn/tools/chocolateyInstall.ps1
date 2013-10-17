@@ -2,7 +2,7 @@
 
 $packageName = 'ShrewSoftVpn' # arbitrary name for the package, used in messages
 $installerType = 'EXE' #only one of these two: exe or msi
-$url = 'http://www.shrew.net/download/vpn/vpn-client-2.2.0-rc-2.exe' # download url
+$url = 'https://www.shrew.net/download/vpn/vpn-client-2.2.2-release.exe' # download url
 $url64 = $url # 64bit URL here or just use the same as $url
 $silentArgs = '/S' # "/s /S /q /Q /quiet /silent /SILENT /VERYSILENT" # try any of these to get the silent installer #msi is always /quiet
 $validExitCodes = @(0) #please insert other valid exit codes here, exit codes for ms http://msdn.microsoft.com/en-us/library/aa368542(VS.85).aspx
