@@ -4,11 +4,12 @@ $packageName = 'ShrewSoftVpn' # arbitrary name for the package, used in messages
 $installerType = 'EXE' #only one of these two: exe or msi
 $url = 'https://www.shrew.net/download/vpn/vpn-client-2.2.2-release.exe' # download url
 $url64 = $url # 64bit URL here or just use the same as $url
-$silentArgs = '/S' # "/s /S /q /Q /quiet /silent /SILENT /VERYSILENT" # try any of these to get the silent installer #msi is always /quiet
+$silentArgs = '/S /STANDARD' # "/s /S /q /Q /quiet /silent /SILENT /VERYSILENT" # try any of these to get the silent installer #msi is always /quiet
 $validExitCodes = @(0) #please insert other valid exit codes here, exit codes for ms http://msdn.microsoft.com/en-us/library/aa368542(VS.85).aspx
 
 # main helpers - these have error handling tucked into them already
 # installer, will assert administrative rights
+# https://www.shrew.net/static/help-2.2.x/html/Shrew%20Soft%20VPN%20Client%20Administrators%20Guide.html?UsingtheVPNClient1.html
 Install-ChocolateyPackage "$packageName" "$installerType" "$silentArgs" "$url" "$url64"  -validExitCodes $validExitCodes
 
 #try { #error handling is only necessary if you need to do anything in addition to/instead of the main helpers
