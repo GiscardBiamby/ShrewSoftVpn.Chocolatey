@@ -5,6 +5,6 @@ Chocolatey package for ShrewSoft VPN, Windows client.
 
 Install offline like this:
 
-# Download nupkg-file to current directory.
-# choco install ShrewSoftVpn -s . --force
+1. Download nupkg-file to current directory.
+2. choco install ShrewSoftVpn -s . --force
 
